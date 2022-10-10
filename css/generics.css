@@ -165,13 +165,9 @@ input {
     position: absolute;
     z-index: 3;
     right: 10px;
-    top: calc(102px/2);
+    top: calc(84px/2);
 }
 
-.stories ion-icon{
-    
-    font-size: 32px;
-}
 
 /*SideBar*/
 
