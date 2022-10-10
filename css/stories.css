@@ -1,0 +1,27 @@
+@media screen and (max-width: 614px) {
+
+    body{
+        display: block;
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .stories {
+        width: 100vw;
+        background-color: var(--backgroung_page);
+        margin-top: 0px;
+    }
+
+    .chevron{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 935px) and (min-width: 615px) {
+
+}
+
+@media screen and (min-width:936px) {
+
+}

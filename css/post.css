@@ -1,0 +1,23 @@
+@media screen and (max-width: 614px) {
+
+    .post , .post:first-child, .postImage, .postImage img, .likedBy p{
+        width: 100%;
+    }
+
+    .post:first-child{
+        margin-top: 0px;
+    }
+
+    .post header div p, .likedBy p, .likedBy span{
+        font-size: 0.90rem;
+        line-height: 0.90rem;
+    }
+}
+
+@media screen and (max-width: 935px) and (min-width: 615px) {
+
+}
+
+@media screen and (min-width:936px) {
+
+}

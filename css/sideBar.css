@@ -1,0 +1,27 @@
+@media screen and (max-width: 614px) {
+
+    .sideBar {
+        display: none;
+    }
+    .sideBarHeader {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 935px) and (min-width: 615px) {
+
+    .sideBar {
+        display: none;
+    }
+    .sideBarHeader {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 935px) {
+
+    .sideBar{
+        display:none;
+    }
+}

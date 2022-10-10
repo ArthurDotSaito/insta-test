@@ -1,0 +1,399 @@
+/*General Content*/
+
+:root {
+    --white: #FFFFFF;
+    --white_stories_background: #FDFDFD;
+    --white_background: #FAFAFA;
+    --backgroung_page: #FAFAFA;
+    --black: #262626;
+    --light_grey:#8E8E8E;
+}
+
+::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+    display: flex;
+    align-items: center;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+*{
+    font-family: 'Roboto', sans-serif !important;
+    font-style: normal;
+}
+
+html {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroung_page);
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1366px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 54px;
+    overflow: scroll;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 614px;
+}
+
+@media screen and (max-width: 614px) {
+    main{
+        width: 100%;
+    }
+
+    body{
+        padding-bottom: 54px;
+    }
+}
+
+/*Header*/
+
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    height: 54px;
+    background-color: var(--white);
+}
+
+.insta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vl {
+    width: 1px;
+    height: 22px;
+    background-color: #dbdbdb;
+    margin: 0px 10px 0px 10px;
+}
+
+input {
+    text-align: center;
+}
+
+#search {
+    width: 215px;
+    height: 28px;
+    background-color: var(--white_search);
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.icons {
+    display: flex;
+    margin-right: 5px;
+}
+
+.icons span {
+    margin: 0px 5px 0px 5px;
+}
+
+/*Stories*/
+
+.stories {
+    margin-top: 34px;
+    display: flex;
+    width: 614px;
+    height: 118px;
+    background-color: var(--white);
+    border: 1px solid var(--white_background);
+    position: relative;
+    border-radius: 3px;
+    overflow-x: hidden;
+}
+
+.storyElement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14px;
+}
+
+.storyElement p{
+    width: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 12px;
+    list-style: 14px;
+}
+
+.stories ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.storiesBackground {
+    position: relative;
+    z-index: 1;
+}
+
+.storyImage {
+    position: absolute;
+    z-index: 2;
+}
+
+.chevron{
+    position: absolute;
+    z-index: 3;
+    right: 10px;
+    top: calc(102px/2);
+}
+
+.stories ion-icon{
+    
+    font-size: 32px;
+}
+
+/*SideBar*/
+
+.sideBar{
+    margin-top: 54px;
+    flex-direction: column;
+    width: 293px;
+    height: 400px;
+    justify-content: space-between;
+    margin-left: 28px;
+    position: sticky;
+    top:5rem;
+}
+
+.sideBarHeader{
+    display: flex;
+    align-items: center;
+}
+
+.sideBarHeader span{
+    display: block;
+    padding-left: 17px;
+}
+
+.sideBarHeader h1, .followsYou .name{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--black);
+}
+
+.sideBarHeader h2{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--light_grey);
+}
+
+.sugestions{
+    margin-top: 24px;
+    width: 293px;
+}
+
+.sugestions header, span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sugestions header h2, .followsYou .situation, .followsYou h3{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--light_grey);    
+}
+
+.sugestions header h3{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--black);    
+}
+
+.followsYou{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.followsYou img{
+    width: 32px;
+    height: 32px;}
+
+.followsYou div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 32px;
+    margin-top: 17px;
+}
+
+.followsYou p{
+    padding-left: 13px;
+}
+
+.followsYou h3{
+    color: #139EF2;    
+}
+
+/*Post*/
+
+.post:first-child{
+    display: flex;
+    flex-direction: column;
+    width: 614px;
+    border: 1px solid var(--white_background);
+    border-radius: 3px;
+    margin-top: 24px;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    width: 614px;
+    border: 1px solid var(--white_background);
+    border-radius: 3px;
+    margin-top: 60px;
+}
+
+.post header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 61px;
+    background-color: var(--white);
+    border-radius: 3px;
+}
+
+.post header div{
+    display: flex;
+    width: 131px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.post header div img{
+    width: 32px;
+    height: 32px;
+}
+
+.post header div p{
+    width: 58px;
+    height: 21px;
+    display:flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--black);
+}
+
+.post header ion-icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 17px;
+}
+
+.post .postImage{
+    display: flex;
+    justify-content: center;
+}
+
+.post .postImage video{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.postReactions, .likedBy{
+    display: flex;
+    width: auto;
+    height: 42px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.likeCommentShare{
+    display: flex;
+    width: 111px;
+    justify-content: space-around;
+}
+
+.save{
+    margin-right: 17px;
+}
+
+.postReactions ion-icon{
+    width: 22px;
+    height: 22px;
+}
+
+.likedBy{
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 34px;
+}
+
+.likedBy .icon{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.likedBy .likeCount{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.likedBy img{
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.likedBy p{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 21px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.likedBy span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}

@@ -1,0 +1,67 @@
+@media screen and (max-width: 614px) {
+
+    .insta {
+        display: flex;
+    }
+
+    .logoInsta {
+        margin-left: 8px;
+    }
+
+    .imageLogoInsta {
+        padding-left: calc((100vw - 24px - 103px - 24px)/2);
+    }
+
+    .vl {
+        display: none;
+    }
+
+    #search {
+        display: none;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    .paperPlane {
+        margin-right: 8px;
+    }
+
+    .compass {
+        display: none;
+    }
+
+    .heart {
+        display: none;
+    }
+
+    .person {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 935px) and (min-width: 614px) {
+
+    .logoInsta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 8px;
+    }
+
+    .imageLogoInsta {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width:935px) {
+
+    .mainHeader {
+        width: 100vw;
+        justify-content: space-around;
+    }
+
+}

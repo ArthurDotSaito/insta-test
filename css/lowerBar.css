@@ -1,0 +1,39 @@
+@media screen and (max-width: 614px) {
+
+    .lowerBar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 54px;
+        background-color: var(--white);
+        border: 1px solid #DBDBDB;
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .lowerBar ion-icon:first-child{
+        margin-left: 10px;
+        color: black;
+    }
+
+    .lowerBar ion-icon:last-child{
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 935px) and (min-width: 615px) {
+
+    .lowerBar{
+        display: none;
+    }
+}
+
+@media screen and (min-width:936px) {
+    
+    .lowerBar{
+        display: none;
+    }
+
+}
